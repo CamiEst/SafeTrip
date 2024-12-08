@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/registrarse.css">
+    <link rel="shortcut icon" href="/Img/icono.png">
+    <title>Registrarse</title>
+</head>
+
+<body>
+    <main>
+        <div id="sign-up">
+            <h1>Registrarse</h1>
+            <div id="mail">
+                <a href="" id="google">
+                    <img src="https://auth.hostinger.com/assets/images/oauth/google.svg" alt="Google">
+                </a>
+                <a href="" id="facebook">
+                    <img src="https://auth.hostinger.com/assets/images/oauth/facebook.svg" alt="Facebook">
+                </a>
+            </div>
+            <p>------------------------ o ------------------------</p>
+            <form id="register" action="">
+                <input id="name" type="text" name="name" placeholder="Nombres" required>
+                <input id="last-name" type="text" name="last-name" placeholder="Apellidos" required>
+                <input id="email" type="email" name="email" autocomplete="username" placeholder="Email" required>
+                <input id="password" type="password" name="password" autocomplete="current-password" placeholder="Contraseña" required>
+                <input id="country" type="text" name="country" placeholder="Pais de origen" required>
+                <div>
+                    <p>Modo de ingreso</p>
+                    <select name="type" id="type" required>>
+                        <option value="turista">Turista</option>
+                        <option value="proovedor">Proovedor</option>
+                    </select>
+                </div>
+                <div id="genders">
+                    <p>Género</p>
+                    <input class="gender" id="woman" type="radio" name="gender" value="woman" required>
+                    <label class="gender-name" for="woman">Mujer</label>
+                    <input class="gender" id="man" type="radio" name="gender" value="man" required>
+                    <label class="gender-name" for="man">Hombre</label>
+                    <input class="gender" id="other" type="radio" name="gender" value="other" required>
+                    <label class="gender-name" for="other">Otro</label>
+                    <input class="gender" id="not-specific" type="radio" name="gender" value="not-specific" required>
+                    <label class="gender-name" for="not-specific">Prefiero no decir</label>
+                </div>
+                <input id="send" type="submit" value="Registrarse">
+                <div id="log-in">
+                    <p>¿Ya tienes cuenta? <a href="iniciarSesion.html">Iniciar Sesión.</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="/JS/registrarse.js"></script>
+</body>
+
+</html>

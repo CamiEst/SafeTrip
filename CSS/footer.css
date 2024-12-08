@@ -1,0 +1,128 @@
+footer{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-top: 2rem;
+}
+.footer__logo__icon{
+    height: 100px;
+    margin: 0px 0px 0px 40px;
+    position:absolute;
+    left: 0;
+    justify-self: auto;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer__logo__icon img{
+    height: 100%;
+    width: fit-content;
+    margin-right: 0.5rem;
+}
+.footer__logo__icon span{
+    font-size: 1.5rem !important;
+    letter-spacing: 0rem;
+    background: linear-gradient(to right, #83590080, #fff4b3);
+    -webkit-background-clip:text; 
+    color: transparent;
+}
+#footer__top{
+    width: 100%;
+    height: 50%;
+    background-color: #6594db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#footer__top ul{
+    display: flex;
+    flex-direction:row;
+}
+#footer__top ul li{
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 20px;
+    color:white;
+    font-size: 13px;
+    height: 100%;
+}
+#footer__top ul li:before{
+    content: ">>";
+}
+#footer__top ul li a{
+    text-decoration: none;
+    color:white;
+}
+#social-media{
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    bottom: -100%;
+    margin-bottom: 10px;
+}
+.social-media__logo{
+    height: 20px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+#footer__bottom{
+    width: 100%;
+    height: 50%;
+    background-color: #5f8ccf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer__bottom p{
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+@media(width <= 600px){
+    .footer__logo__icon{
+        height: 70px;
+        margin: 0px 0px 0px 20px;
+    }
+    #footer__top ul{
+        width: 50%;
+        justify-content: center;
+        white-space: nowrap;
+        flex-wrap: wrap;
+    }
+    #footer__top ul li a{
+        font-size: 10px;
+        font-weight: 300;
+        padding: 0;
+        margin-left: -3px;
+    }
+    .social-media__logo{
+        height: 10px;
+        margin-right: 15px;
+    }
+    #footer__bottom p{
+        font-size: 11px;
+    }
+}
+
+/*
+#ffb677
+#ffd573
+#0043cc
+#008eff
+#7ae7ff
+
+#006c74
+#009faa
+#6594db
+*/

@@ -1,0 +1,373 @@
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navegador_main{
+    width: 100%;
+    height: 7vh;
+    background-color: #ebf1f5;
+    position: sticky;
+    z-index: 999;
+    top: 10vh;
+}
+
+.navegador_main ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navegador_main ul li{
+    margin-top: 0;
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-inline: 1vw;
+}
+
+.navegador_main ul li a{
+    display: block;
+    color: #000000;
+    text-align: center;
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.55vh;
+    transition: transform 0.3s ease;
+}
+
+.navegador_main ul li a:hover{
+    transform: scale(0.85);
+    color: #6594db;
+}
+
+.banner{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #6594db;
+}
+
+.icono_banner{
+    width: 10rem;
+    height: 10rem;
+}
+
+.banner p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nombre_banner{
+    align-self: center;
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0.25vw;
+}
+
+.eslogan_banner{
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    background: linear-gradient(to right, #83590080, #fff4b3);
+    -webkit-background-clip:text; 
+    color: transparent;
+    letter-spacing: 0.5vw;
+    text-align: center;
+}
+
+#info_contenedor{
+    padding-top: 5rem;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info_contenedor > div{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2.5rem;
+}
+
+#que_es div{
+    width: 60%;
+}
+
+#info_contenedor p{
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+#info_contenedor h1{
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+#que_es img{
+    width: 30%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+#que_es h1{
+    color: #009faa;
+}
+
+#nosotros{
+    align-items: center;
+}
+
+#nosotros div{
+    width: 50%;
+}
+
+#nosotros h1{
+    color: #006c74;
+}
+
+#nosotros img{
+    width: 40%;
+    border-radius: 10%;
+}
+
+#objetivo{
+    align-items: center;
+}
+
+#objetivo div{
+    width: 50%;
+}
+
+#objetivo h1{
+    color: #6594db;
+}
+
+#objetivo li{
+    list-style:circle ;
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    transition:all 0.3s ease;
+}
+
+#objetivo li:hover{
+    color: #385075;
+    transform: scale(1.05);
+}
+
+#objetivo li::marker{
+    color: #6594db;
+}
+
+#objetivo iframe{
+    border-radius: 3%;
+    transform: scale(1.1);
+}
+
+#elegir{
+    flex-direction: column !important;
+    overflow: hidden;
+    
+}
+
+#elegir > div{
+    display: flex;
+    flex-direction: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#elegir > div > div{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+#elegir > div > div:hover{
+    background-color: #6594db3d;
+    transform: scale(1.05);
+}
+
+
+#elegir img{
+    width: 60px;
+    height: 60px;
+}
+
+#elegir h1{
+    color: #385075;
+}
+
+#elegir h3{
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    margin: 0;
+    margin-block: 0.3rem;
+    color: #2e4b77;
+}
+
+#elegir p{
+    font-size: 0.9rem !important;
+}
+
+#mision-vision{
+    width: 100%;
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-around;
+}
+
+#mision-vision h1{
+    text-align: center;
+}
+
+#mision-vision img{
+    height:20vh;
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+
+#mision-vision > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    overflow: hidden;
+}
+
+#vision h1{
+    color: #2473b4;
+}
+
+#mision h1{
+    color: #1a3f8a;
+}
+
+#valores{
+    flex-direction: column !important;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#valores h1{
+    color: #6361c2;
+    margin: 0;
+}
+
+#valores > div{
+    width: 20%;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#valores ul{
+    width: 60%;
+    margin: 0;
+    padding: 0;
+}
+
+#valores li{
+    list-style:circle ;
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    transition:all 0.3s ease;
+}
+
+#valores li:hover{
+    color: #292850;
+    transform: scale(1.05);
+}
+
+#valores li::marker{
+    color: #6361c2;
+}
+
+#valores img{
+    height: 20vh;
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+
+#funcionamiento {
+    flex-direction: column !important;
+    align-items: center;
+}
+
+#funcionamiento h1{
+    color: #7e61c2;
+}
+
+#funcionamiento > div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(15vh, 4);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+#funcionamiento img{
+    height: 15vh;
+    width: fit-content;
+}
+
+#funcionamiento p{
+    font-size: 1.3rem;
+}
+
+/*
+#ffb677
+#ffd573
+#0043cc
+#008eff
+#7ae7ff
+
+#006c74
+#009faa
+#6594db
+*/

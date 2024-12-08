@@ -1,0 +1,28 @@
+body{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+}
+
+ul > li{
+    list-style: none;
+}
+
+ol{
+    margin: 0;
+}

@@ -1,0 +1,70 @@
+@import url(general.css);
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#sign-up{
+    background-color: #ffffff;
+    height: 70vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mail{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#mail > a{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    border: solid 1px gray;
+}
+
+#mail img{
+    width: 90%;
+    height: fit-content;
+}
+
+#google{
+    background-color: white;
+}
+
+#facebook{
+    background-color: #1877f2;
+}
+
+/*
+#ffb677
+#ffd573
+#0043cc
+#008eff
+#7ae7ff
+
+#006c74
+#009faa
+#6594db
+*/
+
+
+/*
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+*/
