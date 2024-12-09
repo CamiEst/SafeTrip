@@ -11,16 +11,14 @@ function sign_up(){
     const userLastName = document.getElementById('last-name').value;
     const userEmail = document.getElementById('email').value;
     const userPassword = document.getElementById('password').value;
-    const userGender = document.querySelector('input[name="gender"]:checked').value;
-    const userCountry = document.querySelector('country').value;
-    const userType = document.querySelector('type').value;
+    const userCountry = document.getElementById('country').value;
+    const userType = document.getElementById('type').value;
 
     let user = {
         name: userName,
         lastName: userLastName,
         email: userEmail,
         password: userPassword,
-        gender: userGender,
         country: userCountry,
         type: userType
     }
@@ -28,5 +26,5 @@ function sign_up(){
 }
 
 function redirect(){
-    window.location = 'iniciarSesion.html';
+    window.location = '/html/iniciarSesion.html';
 }

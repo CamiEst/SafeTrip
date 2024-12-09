@@ -1,0 +1,63 @@
+@import url(general.css);
+@import url(header.css);
+@import url(registrarse.css);
+
+
+#log-in > h1{
+    font-weight:600 !important;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+#log-in{
+    background-color: #ffffff;
+    height: auto !important;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#sign-up{
+    height: auto;
+}
+
+#get-in p{
+    font-size: 1.1rem;
+    color: rgb(56, 56, 56);
+}
+
+#get-in a{
+    color: #006c74;
+}
+
+#get-in{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 50%;
+}
+
+#get-in > input{
+    height: 1.5vh;
+    width: 80%;
+    border: solid 1px rgb(168, 168, 168);
+    border-radius: 0.5rem;
+    padding: 1em;
+    margin: 0.6rem;
+}
+
+#not-found{
+    background-color: rgba(255, 174, 174, 0.712);
+    border-radius: 0.5rem;
+    width: 50%;
+    padding: 1rem;
+}
+
+#not-found p{
+    color: rgb(63, 0, 0);
+    font-size: 0.8rem;
+}

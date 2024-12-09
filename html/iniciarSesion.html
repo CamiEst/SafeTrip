@@ -4,21 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/iniciarSesion.css">
-    <link rel="shortcut icon" href="">
+    <link rel="shortcut icon" href="/Img/icono.png">
     <title>Iniciar Sesión</title>
 </head>
 <body>
     <main>
+        <div class="logotipo">
+            <a href="/index.html"><img src="/Img/icono.png" alt="" class="icono"></a>
+            <a href="/index.html"><p><span class="nombre">SafeTrip Cartagena</span></p></a>
+        </div>
         <div id="log-in">
-            <div id="not-found" class="hidden">
-                <h1>Email o Contraseña incorrectas.</h1>
+            <h1>Iniciar Sesión en SafeTrip</h1>
+            <div id="mail">
+                <a href="" id="google">
+                    <img src="https://auth.hostinger.com/assets/images/oauth/google.svg" alt="Google">
+                </a>
+                <a href="" id="facebook">
+                    <img src="https://auth.hostinger.com/assets/images/oauth/facebook.svg" alt="Facebook">
+                </a>
+            </div>
+            <div class="line">
+                <hr>
+                <p> o </p>
+                <hr>
+            </div>
+            <div id="not-found" class="disable">
+                <p>El correo electrónico o la contraseña que ingresaste son incorrectos. Por favor, verifica tus datos e inténtalo nuevamente.
+
+                    Si olvidaste tu contraseña, puedes restablecerla haciendo clic en "¿Olvidó su contraseña?"</p>
             </div>
             <form id="get-in" action="">
-                <h1>Iniciar Sesión</h1>
                 <input id="email" type="email" name="email" placeholder="Email" autocomplete="username" required>
                 <input id="password" type="password" name="password" placeholder="Contraseña" autocomplete="current-password" required>
                 <input id="send" type="submit" value="Iniciar Sesión">
                 <div id="sign-up">
+                    <a href="registrarse.html">¿Olvidó su contraseña?</a>
                     <p>¿Aún no tienes cuenta? <a href="registrarse.html">Registrarse.</a></p>
                 </div>
             </form>

@@ -129,7 +129,7 @@ main{
 #info_contenedor h1{
     font-family: "Afacad", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 600 !important;
     font-style: normal;
     font-size: 2rem;
 }

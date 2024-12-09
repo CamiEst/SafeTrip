@@ -15,10 +15,10 @@ function log_in(){
     if(user && user.password === userPassword){
         sessionStorage.setItem('HAS_LOGGED', 'true');
         sessionStorage.setItem('USER_LOGGED', JSON.stringify(user));
-        window.location = 'productos.html';
+        window.location = '/index.html';
     }
     else{
-        incorrect.classList.remove('hidden');
+        incorrect.classList.remove('disable');
     }
 
 }

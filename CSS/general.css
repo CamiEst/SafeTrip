@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+
 body{
     background-color: #ffffff;
     display: flex;
@@ -25,4 +27,30 @@ ul > li{
 
 ol{
     margin: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6, li, label, input, a, select {
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+} 
+
+.hidden{
+    visibility: hidden;
+}
+
+.disable{
+    display: none;
+}
+
+.confi{
+    position: fixed;
+    top: 10vh;
+    right: 1rem;
+    z-index: 1000;
+    background-color: white;
+    width: 10vw;
+    height: 30vh;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.363);
 }
