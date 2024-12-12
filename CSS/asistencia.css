@@ -1,0 +1,145 @@
+@import url(general.css);
+@import url(header.css);
+@import url(configuraciones.css);
+@import url(footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+/* Estilo general para la sección de Asistencia en Línea */
+.asistencia-linea {
+    font-family: "Afacad", sans-serif;
+    color: #006c74;
+    margin: 2vh auto;
+    padding: 2vh;
+    max-width: 90vw;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(110, 110, 110, 0.2);
+}
+
+.asistencia-linea h2 {
+    font-size: 5vh;
+    font-weight: 800;
+    color: #006c74;
+    font-weight: bold; 
+    text-align: center;
+    margin-bottom: 1.5vh;
+}
+
+.asistencia-linea p {
+    font-size: 3vh;
+    color: #000000;
+    line-height: 1.5;
+    margin: 1vh 0;
+}
+
+
+/* Secciones principales */
+.asistencia-linea .seccion {
+    margin: 2vh 0;
+    padding: 2vh;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.asistencia-linea .seccion h3 {
+    font-size: 3vh;
+    font-weight: 400;
+    color: #008eff;
+    font-weight: bold;
+    margin-bottom: 1vh;
+}
+
+.asistencia-linea .seccion p {
+    font-size: 2vh;
+    color: #000000;
+    margin-bottom: 1.2vh;
+}
+
+/* Botón de Emergencia */
+.boton-emergencia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh 2vh;
+    font-size: 2vh;
+    color: #ffffff;
+    background-color: #ffb677;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.boton-emergencia:hover {
+    background-color: #ff7043;
+    transform: scale(1.1);
+}
+
+/* Preguntas Frecuentes (FAQ) */
+.faq {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq > li {
+    padding: 1vh;
+    background-color: #e3f2fd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.faq > li:hover {
+    background-color: #cfe0ff;
+}
+
+/* Sistema de Tickets */
+.ticket-sistema {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-sistema input {
+    width: 100%;
+    padding: 1vh;
+    margin: 1vh 0;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1.8vh;
+}
+
+.ticket-sistema button {
+    padding: 1vh 2vh;
+    font-size: 2vh;
+    color: #ffffff;
+    background-color: #008eff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ticket-sistema button:hover {
+    background-color: #0043cc;
+    transform: scale(1.1);
+}
+
+.resp{
+    overflow: hidden;
+    width: 90%;
+    background-color: #ebf1f5;
+    margin-block: 0.75vh;
+    height: 0;
+}

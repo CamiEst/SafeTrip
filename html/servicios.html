@@ -3,9 +3,362 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/servicios.css">
+    <link rel="shortcut icon" href="/Img/icono.png">
+    <title>Servicios de SaveTrip</title>
 </head>
 <body>
-    
+    <div class="confi hidden">
+        <div>
+            <a href="denuncias.html">Canal de denuncias</a>
+        </div>
+        <hr>
+        <div>
+            <a href="asistencia.html">Asistencia en linea</a>
+        </div>
+        <hr>
+        <div>
+            <a href="">Configuraciones de la cuenta</a>
+        </div>
+        <hr>
+        <div>
+            <a href="" onclick="confirm(true)">Cerrar sesión</a>
+        </div>
+    </div>
+    <header>
+        <div class="logotipo">
+            <a href="/index.html"><img src="/Img/icono.png" alt="" class="icono"></a>
+            <a href="/index.html"><p><span class="nombre">SafeTrip Cartagena</span><br><span class="eslogan">TURISMO SIN ESTAFAS</span></p></a>
+        </div>
+        <nav class="navegador">
+            <ul>
+              <li><a href="/index.html">Inicio</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="rutas.html">Rutas</a></li>
+            </ul>
+        </nav>
+        <div class="sesion">
+            <a href="/html/registrarse.html" class="registrar">
+                Registrarse
+            </a>
+            <a href="/html/iniciarSesion.html" class="iniciar">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC+ElEQVR4nO2Z30tUQRTHP65SGynkq39A7r/QD9MSkXrpxz8QUkGFEFG0+RhB/qh/w97CXquHIq0oe61WeqkstSIKNGiF3DjwvTDIyt5Z79x7of3AwO7szDkzd8+Zc85caNGiRdp0AyPAfaACrKnZ5xn9ZmNyyy5gDPgF1Bq0n8B1oEjO6AHmnYU+AM4CvcButZL6HjrjXmluLugBPmlhZj4HY8zp09ia5vbkwZzmtaDHwB6PuTb2iea+zNrMxrSQd56biDCnX5CMcoD1xV5E5NhxzGkr+p0DoJsMGHEce7s8kqzTZMCMlJ9JQNY5ybpHBkS2bUfsdik5p17qrEp5ZwKyOiVrlQyIglpe5W1LcQcwDEwCc8BH4LeafZ7Vb8Ma20heKriKu5Q7LcbIs2pORC87ppn5Ro7paUff3wLjwGCdXMv6JhRAo/EfJCPzjbgJ4GGP+ftkapvlpErBUVwFzgNtTcixOReAdUdegRS5IaU/gEMJyOuXrJpkp4LZ8189RR9TaoTla1XJPkpgLNX+rCdn5pQ0FyV7MXRaf9mpH5rxiUa0AS+k4xKBsAC2LCVm06E4Ih2mqz2EgqhueEN4KgnUOVsyJeG3CM+kdFlgTZynEm7ROQ47tKAl4IsiuvXFYUi6rKZPnPcSvjfm+Ik6Udv64tCr8VbzJM6aZ/2xVGcj5sCZ1ydVCbdMNw7f62zkW8y5XRr/hwB89TSt6HBwm/mMj2mtEIDnns7esclPxusUU42cfY4A3PF02Ihm0vPbnv+gF33OrWLojSxozn4C0O74yYDHvFnFoLgMOidcsNrkmlMNhkoaX0vHFQJSdF4hWGWXNKNOHR/8dv4UsKHCKsks2Iq0dck+QUrcdErdJDYzkEWpi5zwrhSvq7Jr9vJh1Ll8mA7kew0XUVaNXdObKyuKfE6nyLE3FJ8KZMjJTRd0FQWyIV3KdaqV1DflxInIsY+TE4rAVeVGca9Ml3XE7iSHFIADeurPtLGq2or6pjQmUzNq0eJ/4x94LiDUc+50cgAAAABJRU5ErkJggg==" alt="lock-2">
+                <p>Iniciar Sesion</p>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="opt_contenedor">
+            <h1>Actividades Recomendadas</h1>
+            <div class="opt">
+                <img src="/Img/playas-islas.webp" alt="">
+                <p>Playas e islas</p>
+            </div>
+            <div class="opt">
+                <img src="/Img/centro-historico.jpg" alt="">
+                <p>Centro Historico</p>
+            </div>
+            <div class="opt">
+                <img src="/Img/murallas.jpg" alt="">
+                <p>Murallas</p>
+            </div>
+            <div class="opt">
+                <img src="/Img/shopping.jpg" alt="">
+                <p>Shopping</p>
+            </div>
+            <div class="opt">
+                <img src="/Img/eating.jpg" alt="">
+                <p>Eating</p>
+            </div>
+        </section>
+        <section class="servicios_contenedor">
+            <div class="busqueda">
+                <div class="search-container">
+                    <button id="filter-button" class="filter-button">
+                        <img src="/Img/filtrar.png" alt="">
+                    </button>
+                    <input type="text" placeholder="Buscar un servicio...">
+                    <button id="search-button">
+                        <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Lupa">
+                    </button>
+                </div>
+            </div>
+            <div class="servicios">
+                <div class="servicio">
+                    <img src="/Img/city-tour.jpg" alt="">
+                    <h1>City Tour por Cartagena</h1>
+                    <p>Recorrido guiado por el centro histórico, el barrio Getsemaní, la Torre del Reloj, la Plaza de la Aduana y el Castillo de San Felipe.</p>
+                    <p><b>Precio aproximado:</b> $30 - $50 USD por persona.</p>
+                    <p><b>Duración:</b> 3-4 horas.</p>
+                    <p><b>Tipo de Servicio:</b> Tours y Excursiones</p>
+                    <button>más info</button>
+                </div>
+                <div class="servicio">
+                    <img src="https://www.cartagenaexplorer.com/wp-content/uploads/2020/07/Depositphotos_156273740_xl-2015-scaled.jpg" alt="">
+                    <h1>Tour de Islas del Rosario</h1>
+                    <p>Viajes en lancha rápida o catamarán a las islas con actividades de snorkel, buceo y relajación en playas de arena blanca.</p>
+                    <p><b>Precio aproximado:</b> $50 - $100 USD por persona.</p>
+                    <p><b>Duración:</b> 1 día.</p>
+                    <p><b>Tipo de Servicio:</b> Tours y Excursiones</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/c8/cb/13.jpg" alt="">
+                    <h1>Tour Nocturno en Chiva Rumbera</h1>
+                    <p>Paseo nocturno en chiva (bus tradicional) con música, bebidas y guía.</p>
+                    <p><b>Precio aproximado:</b> $25 - $40 USD por persona.</p>
+                    <p><b>Duración:</b> 2-3 horas.</p>
+                    <p><b>Tipo de Servicio:</b> Tours y Excursiones</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://cdn.getyourguide.com/img/tour/5e95d341f1bc2.jpeg/146.jpg" alt="">
+                    <h1>Tour Gastronómico</h1>
+                    <p>Degustación de la cocina típica cartagenera (arepas de huevo, ceviche, postres locales, etc.) y visitas a mercados de alimentos.</p>
+                    <p><b>Precio aproximado:</b> $40 - $60 USD por persona.</p>
+                    <p><b>Duración:</b> 3-4 horas.</p>
+                    <p><b>Tipo de Servicio:</b> Tours y Excursiones</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://cdn.atrapalo.com/common/photo/event/4/8/2/3914/993168/vertic_880_0.jpg" alt="">
+                    <h1>Tour en Coche de Caballos</h1>
+                    <p>Recorrido romántico por el centro histórico en coche de caballos.</p>
+                    <p><b>Precio aproximado:</b> $40 - $70 USD por un paseo privado.</p>
+                    <p><b>Duración:</b> 1-2 horas.</p>
+                    <p><b>Tipo de Servicio:</b> Tours y Excursiones</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://media.flytographer.com/uploads/2023/03/photospots-cartagena-photographer-flytographer-17.jpeg" alt="">
+                    <h1>Tour Fotográfico</h1>
+                    <p>Sesiones de fotos en lugares icónicos de la ciudad con fotógrafos profesionales.</p>
+                    <p><b>Precio aproximado:</b> $80 - $150 USD por sesión.</p>
+                    <p><b>Duración:</b> 2-3 horas.</p>
+                    <p><b>Tipo de Servicio:</b> Tours y Excursiones</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://www.civitatis.com/f/espana/cartagena/free-tour-misterios-leyendas-cartagena-r32.jpg" alt="">
+                    <h1>Tour de Leyendas y Fantasmas</h1>
+                    <p>Recorrido nocturno para conocer las leyendas y misterios de la ciudad.</p>
+                    <p><b>Precio aproximado:</b> $20 - $30 USD por persona.</p>
+                    <p><b>Duración:</b> 2 horas.</p>
+                    <p><b>Tipo de Servicio:</b> Tours y Excursiones</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://restagenciaturistica.com/wp-content/uploads/2019/08/1498309517_958678_1498309663_noticia_normal-1024x576.jpg" alt="">
+                    <h1>Snorkel y Buceo</h1>
+                    <p>Explora los arrecifes de coral en las Islas del Rosario.</p>
+                    <p><b>Precio aproximado:</b> $30 - $50 USD por persona (snorkel) / $100 - $150 USD por persona (buceo).</p>
+                    <p><b>Duración:</b> 2-4 horas.</p>
+                    <p><b>Tipo de Servicio:</b> Actividades Acuáticas</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://cdn.yate.co/img/blog/2023/28/lancha-chichi-uvcx640.jpg" alt="">
+                    <h1>Paseos en Lancha Privada</h1>
+                    <p>Renta de lanchas y yates para grupos privados.</p>
+                    <p><b>Precio aproximado:</b> $200 - $500 USD por medio día (para 6-8 personas).</p>
+                    <p><b>Duración:</b> 4-6 horas.</p>
+                    <p><b>Tipo de Servicio:</b> Actividades Acuáticas</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1890/1062/75/dam/disney-cruise-line/port-adventures/cartagena-spain-coastal-kayak-adventure/cs11-coastal-kayak-adventure-16x9.jpg?1596076842614" alt="">
+                    <h1>Paddleboarding y Kayak</h1>
+                    <p>Actividades acuáticas en playas cercanas.</p>
+                    <p><b>Precio aproximado:</b> $15 - $30 USD por persona (por 1-2 horas).</p>
+                    <p><b>Duración:</b> 1-2 horas.</p>
+                    <p><b>Tipo de Servicio:</b> Actividades Acuáticas</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://th.bing.com/th/id/R.c1fcb7c9610cee851b25c5e3b983c23a?rik=i0tmQYSN6krFzw&riu=http%3a%2f%2fcolombiarents.com%2fwp-content%2fuploads%2f2014%2f10%2fbarco-yate-pesca-cartagena-1.jpg&ehk=Ky%2boMj3WxKYO6di9M1HziAOUouLOKmyWneoqkV31al8%3d&risl=&pid=ImgRaw&r=0" alt="">
+                    <h1>Pesca Deportiva</h1>
+                    <p>Salidas en bote para pesca de altura.</p>
+                    <p><b>Precio aproximado:</b> $200 - $600 USD por medio día (para 2-4 personas).</p>
+                    <p><b>Duración:</b> 4-6 horas.</p>
+                    <p><b>Tipo de Servicio:</b> Actividades Acuáticas</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://jetsemani.imgix.net/wp-content/uploads/2017/02/donde_sail_5_img_3181.jpg?fit=crop&auto=format&q=50&w=undefined&h=undefined" alt="">
+                    <h1>Parasailing</h1>
+                    <p>Experiencia aérea sobre la playa.</p>
+                    <p><b>Precio aproximado:</b> $50 - $70 USD por persona.</p>
+                    <p><b>Duración:</b> 20-30 minutos.</p>
+                    <p><b>Tipo de Servicio:</b> Actividades Acuáticas</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://th.bing.com/th/id/OIP.XGOZlLduGqbH7ry2eYZGfwHaEK?rs=1&pid=ImgDetMain" alt="">
+                    <h1>Hoteles en Cartagena</h1>
+                    <p>Desde hoteles boutique hasta resorts de lujo.</p>
+                    <p><b>Precio aproximado:</b> $40 - $500 USD por noche (dependiendo del tipo de hotel).</p>
+                    <p><b>Tipo de Servicio:</b> Alojamiento y Hospedaje</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://colombiarents.com/wp-content/uploads/2021/06/casa-playa-cartagena-1-1.jpg" alt="">
+                    <h1>Alquiler de Apartamentos y Casas Vacacionales</h1>
+                    <p>Estancias en apartamentos turísticos y casas privadas.</p>
+                    <p><b>Precio aproximado:</b> $80 - $300 USD por noche.</p>
+                    <p><b>Tipo de Servicio:</b> Alojamiento y Hospedaje</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://colombiarents.com/wp-content/uploads/2020/10/isla-lujo-privada-islas-rosario-1.jpg" alt="">
+                    <h1>Hospedaje en Islas Privadas</h1>
+                    <p>Estancias en cabañas de lujo o bungalows en islas cercanas.</p>
+                    <p><b>Precio aproximado:</b> $150 - $500 USD por noche.</p>
+                    <p><b>Tipo de Servicio:</b> Alojamiento y Hospedaje</p>
+                    <button>más info</button>
+                </div>
+                <div class="servicio">
+                    <img src="https://cdn.getyourguide.com/img/tour/57b6427b6df86.jpeg/145.jpg" alt="">
+                    <h1>Traslados Aeropuerto-Hotel</h1>
+                    <p>Servicio de transporte privado desde el aeropuerto Rafael Núñez hasta tu hotel o alojamiento en Cartagena.</p>
+                    <p><b>Precio aproximado:</b> $15 - $30 USD por trayecto.</p>
+                    <p><b>Tipo de Servicio:</b> Transporte Turístico</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/16/6e/a0/01/city-bike-tour.jpg" alt="">
+                    <h1>Alquiler de Bicicletas y Scooters</h1>
+                    <p>Renta de bicicletas o scooters para recorrer la ciudad de manera ecológica y divertida.</p>
+                    <p><b>Precio aproximado:</b> $10 - $20 USD por día (bicicleta) / $25 - $40 USD por día (scooter).</p>
+                    <p><b>Tipo de Servicio:</b> Transporte Turístico</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://colombiarents.com/wp-content/uploads/2013/11/alquiler-renta-carros-cartagena-colombia-2-60235_880x550.jpg" alt="">
+                    <h1>Renta de Autos y Motos</h1>
+                    <p>Alquiler de vehículos para moverse libremente por la ciudad y alrededores.</p>
+                    <p><b>Precio aproximado:</b> $40 - $100 USD por día (auto) / $25 - $40 USD por día (moto).</p>
+                    <p><b>Tipo de Servicio:</b> Transporte Turístico</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://th.bing.com/th/id/R.57117981606e3ab0d85537ffcb29ef90?rik=uJgDiNJ9CowVeQ&pid=ImgRaw&r=0" alt="">
+                    <h1>Yates y Catamaranes Privados</h1>
+                    <p>Paseos privados en yates y catamaranes para disfrutar de la costa de Cartagena y las islas cercanas.</p>
+                    <p><b>Precio aproximado:</b> $500 - $2,000 USD por medio día.</p>
+                    <p><b>Tipo de Servicio:</b> Experiencias de Lujo</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://cartagenadreams.com/wp-content/uploads/2021/05/Best-Spas-in-Cartagena-2.jpg" alt="">
+                    <h1>Experiencia de Spa y Bienestar</h1>
+                    <p>Relájate con masajes y tratamientos de belleza en exclusivos spas de Cartagena.</p>
+                    <p><b>Precio aproximado:</b> $50 - $150 USD por persona.</p>
+                    <p><b>Tipo de Servicio:</b> Experiencias de Lujo</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/25/68/d4/b4/disfruta-de-una-variada.jpg" alt="">
+                    <h1>Cenas Románticas</h1>
+                    <p>Cenas privadas en lugares exclusivos con vistas al mar o la ciudad amurallada.</p>
+                    <p><b>Precio aproximado:</b> $50 - $150 USD por pareja.</p>
+                    <p><b>Tipo de Servicio:</b> Experiencias de Lujo</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://th.bing.com/th/id/R.0ed7eddba43926e108ff8464c4d63a0a?rik=MScNq3askZvwog&riu=http%3a%2f%2fexcursioneseniguazu.com.ar%2fimagenes%2fpaseos-helicoptero-cataratas-iguazu%2fpaseos-en-helicoptero-iguazu-2.jpg&ehk=NaC7XVJ%2fT4p1jw6gmtlqsuhEV0LjVqecxgww1Lh2JWw%3d&risl=&pid=ImgRaw&r=0" alt="">
+                    <h1>Paseos en Helicóptero</h1>
+                    <p>Tour panorámico en helicóptero sobre Cartagena y las islas cercanas.</p>
+                    <p><b>Precio aproximado:</b> $150 - $300 USD por persona.</p>
+                    <p><b>Tipo de Servicio:</b> Experiencias de Lujo</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://www.alternativetravelcartagena.com/wp-content/uploads/2015/10/cartagena-tours-clases-de-baile-6.jpg" alt="">
+                    <h1>Clases de Baile (Salsa y Champeta)</h1>
+                    <p>Aprende a bailar salsa y champeta con instructores locales en clases dinámicas y divertidas.</p>
+                    <p><b>Precio aproximado:</b> $20 - $40 USD por persona.</p>
+                    <p><b>Tipo de Servicio:</b> Experiencias Culturales</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://www.alternativetravelcartagena.com/wp-content/uploads/2015/10/cartagena-tours-clases-de-cocina-5.jpg" alt="">
+                    <h1>Clases de Cocina Cartagenera</h1>
+                    <p>Aprende a preparar los platos típicos de la región en una clase de cocina con un chef local.</p>
+                    <p><b>Precio aproximado:</b> $40 - $70 USD por persona.</p>
+                    <p><b>Tipo de Servicio:</b> Experiencias Culturales</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://centrodenoticias24.com/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-25-at-9.35.59-AM.jpeg" alt="">
+                    <h1>Visitas a Comunidades Indígenas</h1>
+                    <p>Conoce las tradiciones de las comunidades indígenas en la región y su forma de vida.</p>
+                    <p><b>Precio aproximado:</b> $30 - $60 USD por persona.</p>
+                    <p><b>Tipo de Servicio:</b> Experiencias Culturales</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://th.bing.com/th/id/R.8eadfce54b1362f031ff1c0d522e79ad?rik=ocra%2fdEZq6T69g&pid=ImgRaw&r=0" alt="">
+                    <h1>Experiencia de Arte y Artesanía</h1>
+                    <p>Participa en talleres donde aprenderás sobre la artesanía local y podrás llevarte tus propias creaciones.</p>
+                    <p><b>Precio aproximado:</b> $20 - $50 USD por persona.</p>
+                    <p><b>Tipo de Servicio:</b> Experiencias Culturales</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://cdn0.matrimonio.com.co/vendor/2099/3_2/960/jpg/img-20200330-wa0038_10_112099-158844341196142.jpeg" alt="">
+                    <h1>Organización de Bodas y Eventos</h1>
+                    <p>Planificación y organización de bodas, celebraciones y eventos especiales en Cartagena y sus alrededores.</p>
+                    <p><b>Precio aproximado:</b> Desde $1,500 hasta $5,000 USD, dependiendo de la escala y servicios incluidos.</p>
+                    <p><b>Tipo de Servicio:</b> Eventos y Bodas</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://cdn0.matrimonio.com.co/vendor/9376/3_2/1280/jpg/14455706-10207102478429766-450113092-o_10_109376_v1.jpeg" alt="">
+                    <h1>Celebraciones Privadas (Fiestas, Cumpleaños, etc.)</h1>
+                    <p>Organiza fiestas y eventos privados en Cartagena, desde cenas hasta grandes celebraciones.</p>
+                    <p><b>Precio aproximado:</b> $500 - $3,000 USD (dependiendo del tipo de evento).</p>
+                    <p><b>Tipo de Servicio:</b> Eventos y Bodas</p>
+                    <button>más info</button>
+                </div>
+                
+                <div class="servicio">
+                    <img src="https://allamerican.travel/elsalvador/wp-content/uploads/2018/06/cartagena_vacaciones_01-01-600x400.jpg" alt="">
+                    <h1>Paquetes de Lunas de Miel</h1>
+                    <p>Paquetes románticos que incluyen alojamiento, tours y actividades para una luna de miel inolvidable.</p>
+                    <p><b>Precio aproximado:</b> $500 - $3,000 USD.</p>
+                    <p><b>Tipo de Servicio:</b> Eventos y Bodas</p>
+                    <button>más info</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/JS/servicios.js"></script>
+    <script src="/JS/usuarioActual.js"></script>
 </body>
 </html>

@@ -3,9 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/asistencia.css">
+    <link rel="shortcut icon" href="/Img/icono.png">
+    <title>Asistencia en linea</title>
 </head>
 <body>
+    <div class="confi disable">
+        <div>
+            <a href="denuncias.html">Canal de denuncias</a>
+        </div>
+        <hr>
+        <div>
+            <a href="asistencia.html">Asistencia en linea</a>
+        </div>
+        <hr>
+        <div>
+            <a href="">Configuraciones de la cuenta</a>
+        </div>
+        <hr>
+        <div>
+            <a href="" onclick="confirm(true)">Cerrar sesión</a>
+        </div>
+    </div>
+    <header>
+        <div class="logotipo">
+            <a href="/index.html"><img src="/Img/icono.png" alt="" class="icono"></a>
+            <a href="/index.html"><p><span class="nombre">SafeTrip Cartagena</span><br><span class="eslogan">TURISMO SIN ESTAFAS</span></p></a>
+        </div>
+        <nav class="navegador">
+            <ul>
+              <li><a href="/index.html">Inicio</a></li>
+              <li><a href="/html/servicios.html">Servicios</a></li>
+              <li><a href="/html/rutas.html">Rutas</a></li>
+            </ul>
+        </nav>
+        <div class="sesion">
+            <a href="/html/registrarse.html" class="registrar">
+                Registrarse
+            </a>
+            <a href="/html/iniciarSesion.html" class="iniciar">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC+ElEQVR4nO2Z30tUQRTHP65SGynkq39A7r/QD9MSkXrpxz8QUkGFEFG0+RhB/qh/w97CXquHIq0oe61WeqkstSIKNGiF3DjwvTDIyt5Z79x7of3AwO7szDkzd8+Zc85caNGiRdp0AyPAfaACrKnZ5xn9ZmNyyy5gDPgF1Bq0n8B1oEjO6AHmnYU+AM4CvcButZL6HjrjXmluLugBPmlhZj4HY8zp09ia5vbkwZzmtaDHwB6PuTb2iea+zNrMxrSQd56biDCnX5CMcoD1xV5E5NhxzGkr+p0DoJsMGHEce7s8kqzTZMCMlJ9JQNY5ybpHBkS2bUfsdik5p17qrEp5ZwKyOiVrlQyIglpe5W1LcQcwDEwCc8BH4LeafZ7Vb8Ma20heKriKu5Q7LcbIs2pORC87ppn5Ro7paUff3wLjwGCdXMv6JhRAo/EfJCPzjbgJ4GGP+ftkapvlpErBUVwFzgNtTcixOReAdUdegRS5IaU/gEMJyOuXrJpkp4LZ8189RR9TaoTla1XJPkpgLNX+rCdn5pQ0FyV7MXRaf9mpH5rxiUa0AS+k4xKBsAC2LCVm06E4Ih2mqz2EgqhueEN4KgnUOVsyJeG3CM+kdFlgTZynEm7ROQ47tKAl4IsiuvXFYUi6rKZPnPcSvjfm+Ik6Udv64tCr8VbzJM6aZ/2xVGcj5sCZ1ydVCbdMNw7f62zkW8y5XRr/hwB89TSt6HBwm/mMj2mtEIDnns7esclPxusUU42cfY4A3PF02Ihm0vPbnv+gF33OrWLojSxozn4C0O74yYDHvFnFoLgMOidcsNrkmlMNhkoaX0vHFQJSdF4hWGWXNKNOHR/8dv4UsKHCKsks2Iq0dck+QUrcdErdJDYzkEWpi5zwrhSvq7Jr9vJh1Ll8mA7kew0XUVaNXdObKyuKfE6nyLE3FJ8KZMjJTRd0FQWyIV3KdaqV1DflxInIsY+TE4rAVeVGca9Ml3XE7iSHFIADeurPtLGq2or6pjQmUzNq0eJ/4x94LiDUc+50cgAAAABJRU5ErkJggg==" alt="lock-2">
+                <p>Iniciar Sesion</p>
+            </a>
+        </div>
+    </header>
+
+    <Main>
+    <section class="asistencia-linea">
+
+        <h2> Asistencia en Línea </h2>
+        <br>
+        <p>Brindamos soporte inmediato para resolver tus dudas, emergencias y orientación en tiempo real.</p>
+        
+        <!-- Chat en Vivo -->
+        <div class="seccion">
+            <h3>Chat en Vivo</h3>
+            <p>Haz tus preguntas en tiempo real y recibe respuestas automáticas o de un agente.</p>
+            <button class="boton-emergencia" id="chatBoton">Abrir Chat</button>
+        </div>
+
+        <!-- Botón de Emergencia -->
+        <div class="seccion">
+            <h3>Botón de Emergencia</h3>
+            <p>Obtén ayuda inmediata en caso de emergencias de estafa, extravío o peligro.</p>
+            <button class="boton-emergencia" id="emergenciaBoton">Asistencia Rápida</button>
+        </div>
+
+        <!-- Preguntas Frecuentes -->
+        <div class="seccion">
+            <h3>Preguntas Frecuentes (FAQ)</h3>
+            <ul class="faq">
+                <li class="preg">¿Cómo puedo evitar estafas durante mi viaje?</li>
+                <div class="resp">
+                    <p>
+                        <Ol>
+                            <li>
+                                <b>Consulta precios de referencia: </b>Usa nuestra sección de Servicios Turísticos para conocer los precios aproximados de taxis, hospedajes, tours y otros servicios.
+                            </li>
+                            <li>
+                                <b>Utiliza proveedores certificados: </b>Revisa la lista de servicios certificados en nuestra plataforma, identificados con una insignia de confianza.
+                            </li>
+                            <li>
+                                <b>Evita pagos en efectivo: </b>Siempre que sea posible, utiliza la opción de pago seguro desde nuestra plataforma. Esto garantiza que el servicio ya ha sido verificado.
+                            </li>
+                            <li>
+                                <b>Sospecha de ofertas demasiado buenas: </b>Si una oferta parece "demasiado buena para ser verdad", probablemente lo sea. Verifica siempre con la plataforma antes de aceptar.
+                            </li>
+                            <li>
+                                <b>cualquier irregularidad: </b>Usa nuestro Canal de Denuncias para reportar cualquier actividad sospechosa o situación irregular. Esto ayuda a proteger a otros turistas.
+                            </li>
+                        </Ol>
+                    </p>
+                </div>
+                <li class="preg">¿Dónde encuentro información sobre transporte local?</li>
+                <div class="resp">
+                    <p>
+                        <ul>
+                            <li>
+                                Para conocer las opciones de transporte en Cartagena, visita la sección de Rutas de Transporte en nuestra plataforma.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                <li class="preg">¿Cómo uso la plataforma para hacer reservas?</li>
+                <div class="resp">
+                    <p>
+                        <ol>
+                            <li>
+                                Accede a la sección de Servicios.
+                            </li>
+                            <li>
+                                Elige la actividad o servicio que deseas reservar (tour, transporte, restaurante, etc.).
+                            </li>
+                            <li>
+                                Haz clic en el botón "Reservar". Esto te permitirá seleccionar la fecha, hora y número de personas.
+                            </li>
+                            <li>
+                                <b>Confirma tu reserva:</b> Revisa los detalles de la reserva antes de proceder al pago.
+                            </li>
+                            <li>
+                                Realiza el pago seguro directamente desde la plataforma. Utilizamos métodos de pago protegidos y verificados.
+                            </li>
+                            <li>
+                                Recibe tu confirmación: Te enviaremos un comprobante con un código QR o un número de reserva que podrás usar para acceder al servicio.
+                            </li>
+                        </ol>
+                    </p>
+                </div>
+            </ul>
+        </div>
+
+        <!-- Sistema de Tickets -->
+        <div class="seccion ticket-sistema">
+            <h3>Sistema de Tickets</h3>
+            <p>Genera un ticket para soporte personalizado:</p>
+            <input type="text" placeholder="Describe tu problema..." id="ticketInput">
+            <button id="ticketBoton">Enviar Ticket</button>
+        </div>
+    </section>
+
+</Main>
+
+<footer>
+    <div class="footer__logo__icon">
+        <img src="/Img/icono.png" alt="Icono">
+            <p><span class="nombre_banner">SafeTrip<br>Cartagena</span></p>
+        </div>
+        <div id="footer__top">
+            <ul>
+                <li><a href=""> Terminos y Condiciones</a></li>
+                <li><a href=""> Política de Privacidad</a></li>
+                <li><a href=""> Política de Cookies</a></li>
+                <li><a href=""> Atencion al Cliente</a></li>
+            </ul>
+            <div id="social-media">
+                <a href="">
+                    <img class="social-media__logo" src="/Img/instagram.png" alt="https://www.flaticon.es/iconos-gratis/logotipo-de-instagram Logotipo de instagram iconos creados por Freepik - Flaticon">
+                </a>
+                <a href="">
+                    <img class="social-media__logo" src="/Img/X.png" alt="https://www.flaticon.es/iconos-gratis/pio Pío iconos creados por Freepik - Flaticon">
+                </a>
+                <a href="">
+                    <img class="social-media__logo" src="/Img/tik-tok.png" alt="https://www.flaticon.es/iconos-gratis/tik-tok Tik tok iconos creados por Freepik - Flaticon">
+                </a>
+            </div>
+        </div>
+        <div id="footer__bottom">
+            <p>
+                © SaveTrip Cartagena 2024 | All Rights reserved.
+            </p>
+        </div>
+    </footer>
     
+    <script src="/JS/asistencia.js"></script>
+    <script src="/JS/usuarioActual.js"></script>
 </body>
 </html>

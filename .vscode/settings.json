@@ -59,5 +59,9 @@
   
   "fiveServer": { 
     "ignore": ["C:/DumpStack.log.tmp"]
-  }
+  },
+  "liveServer.settings.root": "/",
+"files.exclude": {
+  "**/DumpStack.log.tmp": true
+}
 }

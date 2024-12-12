@@ -1,0 +1,131 @@
+@import url(general.css);
+@import url(header.css);
+@import url(configuraciones.css);
+@import url(footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color:#006c74;
+}
+#proveedor-panel h1 {
+
+    font-size: 5vh;
+    font-weight: 800;
+    color: #006c74;
+    font-weight: bold; 
+    text-align: start;
+    margin-bottom: 1.5vh;
+
+}
+
+.proveedor__contenido h2{
+
+    font-size: 4vh;
+    font-weight: 800;
+    color: #0056b3;
+    font-weight: bold; 
+    text-align: center;
+    margin-bottom: 1.5vh;
+
+}
+#proveedor-panel {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.proveedor__contenido {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.proveedor__formulario {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.proveedor__formulario h2 {
+    margin-top: 0;
+    color: #0056b3;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea, form select, form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #003d80;
+}
+
+/* Botón para mostrar/ocultar reseñas */
+#toggle-reseñas {
+    background-color: #008eff; /* Azul brillante */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+#toggle-reseñas:hover {
+    background-color: #0043cc; /* Azul oscuro al pasar el cursor */
+}
+
+#reseñas-panel {
+    background-color: #6594db; 
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de reseñas */
+.reseña {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #6594db; /* Bordes verdes */
+    border-radius: 4px;
+    background-color: #a0bae3; /* Fondo amarillo claro */
+}
+
+.reseña p {
+    margin: 5px 0;
+    color: #00040b; /* Texto de reseña azul oscuro */
+}
+
+.reseña strong {
+    color: #0043cc; /* Texto resaltado azul brillante */
+}

@@ -13,8 +13,15 @@ function Logged(){
         name.innerText = `${user.name}`;
         const iniciar = document.querySelector('.iniciar');
         iniciar.removeAttribute('href');
+        const confi =document.querySelector('.confi');
+        const prov = document.createElement('div');
+        const a = document.createElement('a');
+        a.href = '/html/proveedores.html';
+        a.innerText = 'Proveedores';
+        prov.append(a);
+        confi.append(document.createElement('hr'));
+        confi.append(prov);
         iniciar.addEventListener('click', (e) => {
-            const confi =document.querySelector('.confi');
             if(confi.classList.contains('hidden')){
                 confi.classList.remove('hidden');
                 confi.classList.add('aparecer');
